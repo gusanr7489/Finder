@@ -12,6 +12,7 @@
 다루어야 하는 데이터 구상
 -물건 찾은 게시판 Id, objectName, writer, regdate, found, color, content, img, cnt
 -물건 찾는 게시판 Id, title, writer, regdate, found, color, content, img, cnt
+-댓글 기능 게시판 Id, writer, content
 
 CRUD 기능별 예상 동작 설명
   1.Create: 게시물을 올림
