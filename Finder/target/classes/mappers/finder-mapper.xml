@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Finder">
+	<insert id="insertFinder">
+		insert into Find (writer, object, content)
+		values
+		(#{writer}, #{object}, #{content})
+	</insert>
+	<update id="updateFinder">
+		update Find
+		set writer=#{writer}, object=#{object}, content=#{content}
+		where id=#{id}
+	</update>
+	<delete id="deleteFinder">
+		delete from Find where id=#{id}
+	</delete>
+	<select id="getFinder" resultType="finder">
+		select * from Find where id=#{id}
+	</select>
+	<select id="getFinderList" resultType="finder">
+		select * from Find order by id desc
+	</select>
+</mapper>
