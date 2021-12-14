@@ -4,6 +4,7 @@
  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 <typeAliases>
-<typeAlias alias="finder" type="com.sle.finder.FinderVO" />
+<typeAlias alias="finder" type="com.sle.finder.board.FinderVO" />
+<typeAlias alias="user" type="com.sle.finder.login.UserVO" />
 </typeAliases>
 </configuration>

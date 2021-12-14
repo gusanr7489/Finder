@@ -1,4 +1,4 @@
-package com.sle.finder;
+package com.sle.finder.board;
 
 import java.util.List;
 

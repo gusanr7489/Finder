@@ -1,4 +1,4 @@
-package com.sle.finder;
+package com.sle.finder.board;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,17 +8,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller 
+@RequestMapping(value="/board")
 public class FinderController {
 	@Autowired
 	FinderService finderService;
 	
-	@RequestMapping(value = "/border/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String finderList(Model model) {
 		model.addAttribute("list", finderService.getFinderList());
-		return "posts";
+		return "list";
 	}
 	
-	@RequestMapping(value= "/border/add", method = RequestMethod.GET)
+	@RequestMapping(value= "/add", method = RequestMethod.GET)
 	public String addPost() {
 		return "addpostform";
 	}
