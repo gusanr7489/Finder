@@ -12,13 +12,13 @@ public class FinderController {
 	@Autowired
 	FinderService finderService;
 	
-	@RequestMapping(value = "/finder/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/border/list", method = RequestMethod.GET)
 	public String finderList(Model model) {
 		model.addAttribute("list", finderService.getFinderList());
 		return "posts";
 	}
 	
-	@RequestMapping(value= "/finder/add", method = RequestMethod.GET)
+	@RequestMapping(value= "/border/add", method = RequestMethod.GET)
 	public String addPost() {
 		return "addpostform";
 	}

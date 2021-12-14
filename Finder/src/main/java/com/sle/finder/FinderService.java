@@ -2,6 +2,8 @@ package com.sle.finder;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+@Service
 public interface FinderService {
 	public int insertFinder(FinderVO vo);
 	public int deleteFinder(int id);
