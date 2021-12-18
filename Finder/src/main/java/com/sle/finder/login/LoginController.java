@@ -21,7 +21,9 @@ public class LoginController {
 	
 	@RequestMapping(value = "/loginOk", method = RequestMethod.POST)
 	public String loginCheck(HttpSession session, UserVO vo) {
-		
+	//	System.out.println("안");
+	//	vo.setUserid("admin2");
+	//	vo.setPassword("1008");
 		String returnURL = "";
 		if (session.getAttribute("login") != null) {
 			session.removeAttribute("login");

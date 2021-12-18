@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Finder">
 	<insert id="insertFinder">
-		insert into Find (writer, object, content)
+		insert into Find (writer, object, content, image_path)
 		values
-		(#{writer}, #{object}, #{content})
+		(#{writer}, #{object}, #{content}, #{image_path})
 	</insert>
 	<update id="updateFinder">
 		update Find
@@ -19,5 +19,6 @@
 	</select>
 	<select id="getFinderList" resultType="finder">
 		select * from Find order by id desc
+			
 	</select>
 </mapper>
