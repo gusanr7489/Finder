@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Finder">
 	<insert id="insertFinder">
-		insert into Find (writer, object, content, image_path)
+		insert into Find (writer, cate, object, content, image_path)
 		values
-		(#{writer}, #{object}, #{content}, #{image_path})
+		(#{writer}, #{cate}, #{object}, #{content}, #{image_path})
 	</insert>
 	<update id="updateFinder">
 		update Find
-		set writer=#{writer}, object=#{object}, content=#{content}
+		set writer=#{writer}, cate=#{cate}, object=#{object}, content=#{content}
 		where id=#{id}
 	</update>
 	<delete id="deleteFinder">
@@ -19,6 +19,8 @@
 	</select>
 	<select id="getFinderList" resultType="finder">
 		select * from Find order by id desc
-			
+	</select>
+	<select id = "showlist" resultType = "finder">
+		select * from Find where id=#{id}
 	</select>
 </mapper>

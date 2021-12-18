@@ -29,6 +29,7 @@ public class FinderDAO {
 		return vo;
 	}
 	
+	
 	public List<FinderVO> getFinderList(){
 		List<FinderVO> list = sqlSession.selectList("Finder.getFinderList");
 		return list;

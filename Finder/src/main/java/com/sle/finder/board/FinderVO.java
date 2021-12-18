@@ -10,6 +10,7 @@ public class FinderVO {
 	Date regdate;
 	int cnt;
 	String image_path;
+	String cate;
 	
 	public int getId() {
 		return id;
@@ -22,6 +23,14 @@ public class FinderVO {
 	}
 	public void setWriter(String writer) {
 		this.writer = writer;
+	}
+	
+	// cate
+	public String getCate() {
+		return cate;
+	}
+	public void setCate(String cate) {
+		this.cate = cate;
 	}
 	public String getObject() {
 		return object;
