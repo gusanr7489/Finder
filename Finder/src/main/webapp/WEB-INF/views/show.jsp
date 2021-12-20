@@ -105,7 +105,7 @@
 </head>
 <body id = "body">
 	<div id= "board" style = 'width: 100%; text-align: center; padding-top: 100px'>
-		<h1>게시물 수정</h1>
+		<h1>게시물</h1>
 		
 		<form:form commandName="finderVO" method="POST" action="../editok">
 			<form:hidden path="id"/>
@@ -129,13 +129,7 @@
 	
 			</table>
 	
-			<input id = "button" type="submit" value="수정하기"  onclick = "button()"/>
-			<input id = "button" type="button" value="취소하기" onclick="history.back()">
-			<script>
-				let button = () => {
-					alert("수정 완료!!")
-				}
-			</script>
+			<input id = "button" type="button" value="뒤로가기" onclick="history.back()">
 		</form:form>
 	</div>
 	<footer>

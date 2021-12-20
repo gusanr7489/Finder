@@ -69,14 +69,15 @@ public class FinderController {
 		return "redirect:../list";
 	}
 	
-	/*
+	
 	@RequestMapping(value = "/show/{id}", method = RequestMethod.GET) 
-	public String findList(Model mo) {
-		mo.addAttribute("list", finderService.getFinderList());
+	public String findList(@PathVariable("id") int id, Model model) {
+		FinderVO finderVO = finderService.getFinder(id);
+		model.addAttribute("finderVO", finderVO);
 		return "show";
 		
 	}
-	*/
+	
 	@RequestMapping(value = "/post", method = RequestMethod.GET)
 	public String home(Model model) {
 		return "post";

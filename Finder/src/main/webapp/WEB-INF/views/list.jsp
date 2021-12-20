@@ -139,6 +139,7 @@
 			<th>Object</th>
 			<th>Content</th>
 			<th>Regdate</th>
+			<th>Show</th>
 			<th>Edit</th>
 			<th>Delete</th>
 		</tr>
@@ -153,7 +154,7 @@
 				<td>${u.content}</td>    
 				<td><fmt:formatDate value="${u.regdate}" pattern="yyyy-MM-dd-HH:mm"/></td>
 				
-				
+				<td><a href="show/${u.id}"><i class="far fa-edit"></i></a></td>
 				<td><a href="editform/${u.id}"><i class="far fa-edit"></i></a></td>
 			<td><a href="javascript:delete_ok('${u.id}')"><i class="fas fa-minus-circle"></i></a></td>
 			</tr>

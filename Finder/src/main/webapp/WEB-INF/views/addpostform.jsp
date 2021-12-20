@@ -133,7 +133,7 @@
 				</tr>
 				<tr>
 					<td>Object</td>
-					<td><input id= "text" type="text" name="objec" placeholder = "물건을 반드시 입력하세요" required/></td>
+					<td><input id= "text" type="text" name="object" placeholder = "물건을 반드시 입력하세요" required/></td>
 				</tr>
 				<tr>
 					<td>Photo</td>
